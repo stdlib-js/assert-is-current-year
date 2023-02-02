@@ -31,7 +31,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import isCurrentYear from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-current-year@deno/mod.js';
+import isCurrentYear from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-current-year@v0.0.1-deno/mod.js';
 ```
 
 #### isCurrentYear( value )
@@ -60,7 +60,7 @@ bool = isCurrentYear( 2021 );
 
 ```javascript
 import currentYear from 'https://cdn.jsdelivr.net/gh/stdlib-js/time-current-year@deno/mod.js';
-import isCurrentYear from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-current-year@deno/mod.js';
+import isCurrentYear from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-current-year@v0.0.1-deno/mod.js';
 
 var bool = isCurrentYear( new Date() );
 // returns true
