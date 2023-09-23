@@ -42,6 +42,11 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import isCurrentYear from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-current-year@deno/mod.js';
+```
+The previous example will load the latest bundled code from the deno branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/assert-is-current-year/tags). For example,
+
+```javascript
 import isCurrentYear from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-current-year@v0.1.0-deno/mod.js';
 ```
 
@@ -71,7 +76,7 @@ bool = isCurrentYear( 2021 );
 
 ```javascript
 import currentYear from 'https://cdn.jsdelivr.net/gh/stdlib-js/time-current-year@deno/mod.js';
-import isCurrentYear from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-current-year@v0.1.0-deno/mod.js';
+import isCurrentYear from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-current-year@deno/mod.js';
 
 var bool = isCurrentYear( new Date() );
 // returns true
