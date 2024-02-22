@@ -35,85 +35,17 @@ limitations under the License.
 
 > Test if a value is the current year.
 
-<section class="installation">
 
-## Installation
 
-```bash
-npm install @stdlib/assert-is-current-year
-```
 
-Alternatively,
 
--   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
--   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
--   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
--   To use as a general utility for the command line, install the corresponding [CLI package][cli-section] globally.
 
-The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
 
-To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
 
-</section>
-
-<section class="usage">
-
-## Usage
-
-```javascript
-var isCurrentYear = require( '@stdlib/assert-is-current-year' );
-```
-
-#### isCurrentYear( value )
-
-Tests if a `value` is either an integer equal to the current year or a `Date` object representing the current year.
-
-```javascript
-var currentYear = require( '@stdlib/time-current-year' );
-
-var bool = isCurrentYear( currentYear() );
-// returns true
-
-bool = isCurrentYear( 2021 );
-// returns false
-```
-
-</section>
-
-<!-- /.usage -->
-
-<section class="examples">
-
-## Examples
-
-<!-- eslint no-undef: "error" -->
-
-```javascript
-var currentYear = require( '@stdlib/time-current-year' );
-var isCurrentYear = require( '@stdlib/assert-is-current-year' );
-
-var bool = isCurrentYear( new Date() );
-// returns true
-
-bool = isCurrentYear( currentYear() );
-// returns true
-
-bool = isCurrentYear( 2021 );
-// returns false
-
-bool = isCurrentYear( null );
-// returns false
-```
-
-</section>
-
-<!-- /.examples -->
-
-* * *
 
 <section class="cli">
 
-## CLI
+
 
 <section class="installation">
 
@@ -131,7 +63,7 @@ npm install -g @stdlib/assert-is-current-year-cli
 
 <section class="usage">
 
-### Usage
+## Usage
 
 ```text
 Usage: is-current-year [options] [<year>]
@@ -149,29 +81,11 @@ Options:
 
 <!-- CLI usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
-<section class="notes">
 
-### Notes
-
--   If the split separator is a [regular expression][mdn-regexp], ensure that the `split` option is either properly escaped or enclosed in quotes.
-
-    ```bash
-    # Not escaped...
-    $ echo -n $'1998\n1999' | is-current-year --split /\r?\n/
-
-    # Escaped...
-    $ echo -n $'1998\n1999' | is-current-year --split /\\r?\\n/
-    ```
-
--   The implementation ignores trailing delimiters.
-
-</section>
-
-<!-- /.notes -->
 
 <section class="examples">
 
-### Examples
+## Examples
 
 ```bash
 $ is-current-year 2011
@@ -205,6 +119,11 @@ false
 
 <section class="related">
 
+## See Also
+
+-   <span class="package-name">[`@stdlib/assert-is-current-year`][@stdlib/assert-is-current-year]</span><span class="delimiter">: </span><span class="description">test if a value is the current year.</span>
+
+
 </section>
 
 <!-- /.related -->
@@ -222,7 +141,7 @@ This package is part of [stdlib][stdlib], a standard library for JavaScript and 
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
-#### Community
+### Community
 
 [![Chat][chat-image]][chat-url]
 
@@ -245,8 +164,8 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 
 <section class="links">
 
-[npm-image]: http://img.shields.io/npm/v/@stdlib/assert-is-current-year.svg
-[npm-url]: https://npmjs.org/package/@stdlib/assert-is-current-year
+[npm-image]: http://img.shields.io/npm/v/@stdlib/assert-is-current-year-cli.svg
+[npm-url]: https://npmjs.org/package/@stdlib/assert-is-current-year-cli
 
 [test-image]: https://github.com/stdlib-js/assert-is-current-year/actions/workflows/test.yml/badge.svg?branch=v0.2.1
 [test-url]: https://github.com/stdlib-js/assert-is-current-year/actions/workflows/test.yml?query=branch:v0.2.1
