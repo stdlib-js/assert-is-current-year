@@ -42,7 +42,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import isCurrentYear from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-current-year@esm/index.mjs';
+import isCurrentYear from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-current-year@v0.2.3-esm/index.mjs';
 ```
 
 #### isCurrentYear( value )
@@ -76,7 +76,7 @@ bool = isCurrentYear( 2021 );
 <script type="module">
 
 import currentYear from 'https://cdn.jsdelivr.net/gh/stdlib-js/time-current-year@esm/index.mjs';
-import isCurrentYear from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-current-year@esm/index.mjs';
+import isCurrentYear from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-current-year@v0.2.3-esm/index.mjs';
 
 var bool = isCurrentYear( new Date() );
 // returns true
